@@ -19,13 +19,15 @@
     <finalName>web-application</finalName>
   </build>
   <distributionManagement>
-      <snapshotRepository>
-        <id>nexus-snapshots</id>
-        <url>http://3.109.133.36:8081/repository/maven-snapshots/</url>
-      </snapshotRepository>
-      <repository>
-        <id>nexus-releases</id>
-        <url>http://3.109.133.36:8081/repository/maven-releases/</url>
-      </repository>
-    </distributionManagement>
+<repository>
+<id>central</id>
+<name>Artifactory stage-releases</name>
+<url>https://tst.artifacts.rndit.intra.lighting.com/artifactory/artitest-maven-local</url>
+</repository>
+<snapshotRepository>
+<id>snapshots</id>
+<name>Artifactory stage-snapshots</name>
+<url>https://tst.artifacts.rndit.intra.lighting.com/artifactory/artitest-maven-local</url>
+</snapshotRepository>
+</distributionManagement>
 </project>
